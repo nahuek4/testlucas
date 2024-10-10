@@ -1,0 +1,19 @@
+// _mixins.scss
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    font-size: 2rem;
+  }
+  
+  @mixin box-shadow($x: 10px, $y: 10px, $blur: 20px) {
+    box-shadow: $x $y $blur;
+  }
+  
+  @mixin responsive-img($width) {
+    img {
+      width: $width;
+    }
+  }
+  

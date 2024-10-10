@@ -1,0 +1,157 @@
+//header
+@media (max-width: 575px) {
+    .navbar-nav {
+        text-align: center;
+
+        .nav-item {
+            margin-bottom: 10px;
+        }
+    }
+
+    img {
+        width: 80px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: center; // Asegura que el menú esté centrado
+    }
+
+    .card {
+        width: 100%; // Asegura que la card ocupe el ancho completo
+        margin: 0; // Elimina márgenes si es necesario
+    }
+
+    .img-fluid {
+        max-width: 100%; // Asegura que la imagen se ajuste al contenedor
+        height: auto; // Mantiene la proporción
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    /* Alineación horizontal en desktop */
+}
+
+.logo {
+    flex: 1;
+    /* Espacio flexible para la imagen */
+    display: flex;
+    /* Usar flexbox para centrar contenido */
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente si es necesario */
+}
+
+.menu {
+    flex: 1;
+    /* Espacio flexible para el menú */
+}
+
+@media (max-width: 768px) {
+
+    /* Cambios para pantallas pequeñas */
+    .container {
+        flex-direction: column;
+        /* Cambia a alineación vertical */
+        align-items: center;
+        /* Centra elementos horizontalmente */
+    }
+
+    .logo {
+        order: 1;
+        /* Asegura que la imagen esté primero */
+        margin-bottom: 20px;
+        /* Espacio debajo del logo */
+        margin-left: 40%;
+    }
+
+    .menu {
+        order: 2;
+        /* Asegura que el menú esté debajo de la imagen */
+    }
+}
+
+
+
+
+// Mobile jugador
+@media (max-width: 767px) {
+
+    .div-player,
+    .div-jugador {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .responsive-iframe {
+        padding-bottom: 75%;
+    }
+}
+
+
+
+
+// Mobile entrenador
+@media screen and (max-width: 768px) {
+    .main-dt {
+        padding: 1rem;
+        display: flex; // Cambiamos a flex para que todo se apile en una columna
+        flex-direction: column; // Asegura que los hijos se alineen en columna
+
+        .div-uno {
+            h1 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+
+            img {
+                width: 90%;
+            }
+        }
+
+        .div-generico {
+            h2 {
+                font-size: 1.2rem;
+                margin: 1rem;
+            }
+        }
+    }
+}
+
+//Mobile Galeria
+@media (max-width: 768px) {
+
+    // Estilos para pantallas de 768px o menos
+    .contenedor {
+        grid-template-columns: 1fr; // Una sola columna
+        row-gap: 1rem; // Ajusta el espaciado
+    }
+
+    .boton {
+        padding: 10px 20px; // Espaciado de botones
+    }
+}
+
+//footer
+@media (max-width: 767px) {
+    #footer {
+        padding: 15px;
+
+        h1 {
+            font-size: 1.2em;
+        }
+
+        iframe {
+            height: 200px;
+        }
+    }
+}

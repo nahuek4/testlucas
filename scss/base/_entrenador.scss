@@ -1,0 +1,65 @@
+//entrenador 
+.main-dt {
+    background-color: darkred;
+    padding: 2rem;
+    display: grid;
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr); // Corregido el uso de "fr"
+    row-gap: 1rem;
+
+    .div-uno {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        color: whitesmoke;
+        gap: 1rem;
+        padding: 1rem;
+        align-items: center; // Centramos todo el contenido horizontalmente
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 2rem;
+            color: tomato;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            margin-bottom: 2rem;
+            text-align: center;
+
+            span {
+                display: block;
+            }
+        }
+
+        img {
+            border-radius: 20%;
+            width: 70%;
+            margin: 0 auto; // Esto centrará la imagen dentro de su contenedor
+        }
+    }
+
+    .div-generico {
+        display: flex;
+        text-align: center;
+        background-color: brown;
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+            border-radius: 20%;
+        }
+
+        h2 {
+            margin: 2rem;
+            background-color: whitesmoke;
+            border-radius: 30px;
+            color: black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 0 5%;
+        }
+    }
+}
+
+

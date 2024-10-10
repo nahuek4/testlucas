@@ -1,0 +1,113 @@
+//boton pie de pagina 
+.text-center {
+  text-align: center;
+  /* Centra el texto dentro del contenedor */
+  margin: 20px 0;
+  /* Espacio vertical alrededor del contenedor */
+
+  a {
+    color: #ffffff;
+    /* Color del texto del enlace */
+    background-color: darkgray;
+    /* Color de fondo del enlace */
+    padding: 10px;
+    /* Espaciado interno */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    text-decoration: none;
+    /* Elimina el subrayado */
+    transition: background-color 0.3s ease;
+    /* Animación suave para el fondo */
+    margin-right: 1.5%;
+
+
+    &:hover {
+      background-color: #0056b3;
+      /* Color de fondo al pasar el mouse */
+    }
+  }
+}
+
+
+// estilos index 
+.main-home {
+  background-color: $color-principal;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  row-gap: 1rem;
+
+  .div-home {
+    background-color: $color-secundario;
+    color: $color-cuarto;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+
+    h1 {
+      font-family: 'Georgia', serif; // Cambia la fuente a algo elegante
+      font-size: 2.5rem; // Tamaño de fuente grande
+      text-transform: uppercase; // Mayúsculas
+      letter-spacing: 3px; // Espacio entre letras
+      text-align: center; // Centra el texto
+      color: $color-principal; // Usa tu color principal (variable SCSS)
+      padding: 15px; // Espacio alrededor
+      background-color: $color-secundario; // Fondo con tu color secundario
+      border-radius: 10px; // Bordes redondeados
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+
+      span {
+        display: block;
+      }
+    }
+
+    img {
+      border-radius: 20%;
+      width: 50%;
+      padding-top: 30px;
+    }
+
+    h2 {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; // Fuente moderna y legible
+      font-size: 1.5rem; // Tamaño de fuente
+      font-weight: bold; // Negrita para destacar
+      text-align: center; // Centra el texto
+      color: $color-cuarto; // Color usando tu variable SCSS
+      margin: 20px 0; // Espaciado arriba y abajo
+      position: relative; // Posicionamiento relativo para el pseudo-elemento
+
+      &::after {
+        content: ""; // Necesario para crear el pseudo-elemento
+        display: block; // Hace que el pseudo-elemento se comporte como un bloque
+        width: 50%; // Ajusta el ancho de la línea
+        height: 1px; // Altura de la línea
+        background-color: $color-terciario; // Color de la línea
+        margin: 10px auto 0; // Centra la línea y agrega margen superior
+      }
+    }
+  }
+
+  .div-home2 {
+    h3 {
+      color: $color-terciario;
+      background-color: white;
+      width: 50%;
+      padding: 0.5rem;
+      border-radius: 15px;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    text-align: center;
+    background-color: rgb(31, 26, 26);
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  p {
+    padding: 30px;
+  }
+}

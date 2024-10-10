@@ -1,0 +1,88 @@
+.main-contacto {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+
+    h1 {
+      font-family: 'Georgia', serif;        // Cambia la fuente a algo elegante
+      font-size: 1.5rem;                      // Tamaño de fuente grande
+      text-transform: uppercase;            // Mayúsculas
+      letter-spacing: 3px;                  // Espacio entre letras
+      text-align: center;                   // Centra el texto
+      color: $color-principal;              // Usa tu color principal (variable SCSS)
+      padding: 15px;                        // Espacio alrededor
+      background-color: $color-secundario;  // Fondo con tu color secundario
+      border-radius: 10px;                  // Bordes redondeados
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); // Sombra para darle profundidad
+    }
+}
+
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    &[type="text"],
+    &[type="email"],
+    &[type="password"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+  
+    &[type="submit"],
+    &[type="reset"] {
+      width: 48%;
+      padding: 10px;
+      margin: 10px 1%;
+      font-size: 1em;
+      color: white;
+      background-color: #28a745;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    &[type="reset"] {
+      background-color: #dc3545;
+    }
+  
+    &[type="submit"] {
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  
+    &[type="reset"] {
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  

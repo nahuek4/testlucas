@@ -1,0 +1,109 @@
+//header
+@media (min-width: 576px) and (max-width: 991px) {
+    img {
+        width: 120px; // Ajuste del tamaño del logo en tablets
+    }
+
+    .navbar-nav {
+        justify-content: center; // Centrar el menú en pantallas medianas
+
+        .nav-item {
+            margin-left: 15px;
+        }
+    }
+}
+
+//index-main
+@media screen and (min-width: 600px) {
+    .main-home {
+        .div-home {
+            h1 {
+                span {
+                    display: inline;
+                }
+            }
+
+            .div-home2 {
+                padding: 2rem;
+            }
+        }
+    }
+}
+
+//jugador
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .div-player,
+    .div-jugador {
+        flex: 1 1 45%;
+    }
+}
+
+// Media query para tabletas
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+    .main-dt {
+        padding: 1.5rem;
+        display: grid;
+        display: flex;
+        grid-template-columns: 1fr 1fr; // Dos columnas para mejor uso del espacio
+        row-gap: 1rem; 
+        column-gap: 1rem; 
+
+        // Asumimos que .div-generico es el último elemento
+        .div-generico {
+            grid-column: 1 / -1; // Esto hará que .div-generico ocupe toda la fila
+        }
+
+        .div-uno {
+            h1 {
+                font-size: 1.8rem; 
+                margin-bottom: 1rem; 
+            }
+
+            img {
+                width: 100%; 
+                max-width: 300px; 
+            }
+        }
+
+        h2 {
+            font-size: 1.5rem; 
+            margin: 1rem; 
+        }
+    }
+}
+
+
+//galeria 
+@media screen and (min-width: 600px) {
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        column-gap: 1.5rem;
+
+        .img-cuatro {
+            grid-column: span 2;
+        }
+    }
+}
+
+//contacto
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .main-contacto {
+        max-width: 600px;
+
+        input[type="submit"],
+        input[type="reset"] {
+            width: 48%;
+        }
+    }
+}
+
+//footer
+@media (min-width: 768px) and (max-width: 1024px) {
+    #footer {
+        h1 {
+            font-size: 1.3em;
+        }
+    }
+}

@@ -1,0 +1,212 @@
+//enlace interno
+
+//estilos header general 
+header {
+    padding: 10px 0;
+    padding: 2rem;
+    background-color: $color-secundario;
+    margin: 0px 30px;
+    display: flex;
+
+    .red-bg {
+        background-color: $color-secundario;
+    }
+
+    h1 {
+        background-color: $color-secundario;
+        text-decoration: underline;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 50px;
+    }
+
+    h2 {
+        padding: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    img {
+        width: 30%;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    nav {
+        ul {
+            text-align: center;
+            list-style: none;
+
+            li {
+                display: inline-block;
+                margin-left: 50%;
+                margin: 20px;
+                border-radius: 100px;
+                background-color: tomato;
+                padding: 10px;
+                box-shadow: 10px 10px 20px;
+                color: $color-secundario;
+                display: flex;
+
+                a {
+                    text-decoration: none;
+                    background-color: $color-secundario;
+                }
+            }
+
+            //estilo para los submenús
+            .dropdown-menu {
+                .dropdown-item {
+                    text-transform: uppercase; 
+                }
+            }
+        }
+    }
+
+    .navbar {
+        background-color: black;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+}
+
+
+//estilos de main general
+
+main {
+    background-color: $color-principal;
+    text-align: center;
+    color: whitesmoke;
+
+    img {
+        width: 70%;
+    }
+
+    p {
+        padding: 20%;
+    }
+
+    h1 {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 2rem;
+        color: whitesmoke;
+        width: auto;
+        padding: 1.5rem;
+        border-radius: 15px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+//estilos de footer general 
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+
+    p {
+        color: whitesmoke;
+    }
+
+    h1 {
+        color: whitesmoke;
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 1.5em;
+    }
+
+    ul {
+        li {
+            a {
+                color: whitesmoke;
+            }
+        }
+    }
+
+    div {
+        margin: 15px 0;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 600px;
+        height: 300px;
+        border: 0;
+    }
+
+    //estilos para la lista
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    ul {
+        li {
+            display: inline;
+            margin: 0 10px
+        }
+    }
+
+    //enlaces
+    a {
+        color: #ff5733;
+        text-decoration: none;
+    }
+
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    ul {
+        list-style: none;
+        
+        padding: 5px;
+        margin: 10px;
+
+        li {
+            display: inline;
+            margin-right: 15px;
+            a {
+                text-decoration: none;              
+                color: #007bff;
+                padding: 5px 10px;               
+                border-radius: 4px;      
+                background-color: whitesmoke;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: whitesmoke;
+                    color: red;
+                }
+            }
+        }
+    }
+
+    div {
+        text-align: center;
+        margin: 20px;
+        a {
+            display: inline-block;
+            padding: 10px 15px;
+            color: #ffffff;
+            background-color: #c8102e;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+         
+            &:hover {
+                background-color: #a5001d;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,935 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 10px 0;
+  padding: 2rem;
+  background-color: black;
+  margin: 0px 30px;
+  display: flex;
+}
+
+header .red-bg {
+  background-color: black;
+}
+
+header h1 {
+  background-color: black;
+  text-decoration: underline;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 50px;
+}
+
+header h2 {
+  padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header img {
+  width: 30%;
+  align-items: center;
+  max-width: 100%;
+}
+
+header nav ul {
+  text-align: center;
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 50%;
+  margin: 20px;
+  border-radius: 100px;
+  background-color: tomato;
+  padding: 10px;
+  box-shadow: 10px 10px 20px;
+  color: black;
+  display: flex;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  background-color: black;
+}
+
+header nav ul .dropdown-menu .dropdown-item {
+  text-transform: uppercase;
+}
+
+header .navbar {
+  background-color: black;
+}
+
+header .navbar-toggler {
+  border: none;
+}
+
+main {
+  background-color: darkred;
+  text-align: center;
+  color: whitesmoke;
+}
+
+main img {
+  width: 70%;
+}
+
+main p {
+  padding: 20%;
+}
+
+main h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2rem;
+  color: whitesmoke;
+  width: auto;
+  padding: 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  color: whitesmoke;
+}
+
+footer h1 {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.5em;
+}
+
+footer ul li a {
+  color: whitesmoke;
+}
+
+footer div {
+  margin: 15px 0;
+}
+
+footer iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  border: 0;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer a {
+  color: #ff5733;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer ul {
+  list-style: none;
+  padding: 5px;
+  margin: 10px;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #007bff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  transition: background-color 0.3s ease;
+}
+
+footer ul li a:hover {
+  background-color: whitesmoke;
+  color: red;
+}
+
+footer div {
+  text-align: center;
+  margin: 20px;
+}
+
+footer div a {
+  display: inline-block;
+  padding: 10px 15px;
+  color: #ffffff;
+  background-color: #c8102e;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+footer div a:hover {
+  background-color: #a5001d;
+}
+
+@media (max-width: 575px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+
+  img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0;
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  /* Alineación horizontal en desktop */
+}
+
+.logo {
+  flex: 1;
+  /* Espacio flexible para la imagen */
+  display: flex;
+  /* Usar flexbox para centrar contenido */
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  /* Centra verticalmente si es necesario */
+}
+
+.menu {
+  flex: 1;
+  /* Espacio flexible para el menú */
+}
+
+@media (max-width: 768px) {
+
+  /* Cambios para pantallas pequeñas */
+  .container {
+    flex-direction: column;
+    /* Cambia a alineación vertical */
+    align-items: center;
+    /* Centra elementos horizontalmente */
+  }
+
+  .logo {
+    order: 1;
+    /* Asegura que la imagen esté primero */
+    margin-bottom: 20px;
+    /* Espacio debajo del logo */
+    margin-left: 40%;
+  }
+
+  .menu {
+    order: 2;
+    /* Asegura que el menú esté debajo de la imagen */
+  }
+}
+
+@media (max-width: 767px) {
+
+  .div-player,
+  .div-jugador {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .responsive-iframe {
+    padding-bottom: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-dt {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-dt .div-uno h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .main-dt .div-uno img {
+    width: 90%;
+  }
+
+  .main-dt .div-generico h2 {
+    font-size: 1.2rem;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+
+  .boton {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  #footer {
+    padding: 15px;
+  }
+
+  #footer h1 {
+    font-size: 1.2em;
+  }
+
+  #footer iframe {
+    height: 200px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  img {
+    width: 120px;
+  }
+
+  .navbar-nav {
+    justify-content: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .main-home .div-home h1 span {
+    display: inline;
+  }
+
+  .main-home .div-home .div-home2 {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .div-player,
+  .div-jugador {
+    flex: 1 1 45%;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  .main-dt {
+    padding: 1.5rem;
+    display: grid;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem;
+  }
+
+  .main-dt .div-generico {
+    grid-column: 1/-1;
+  }
+
+  .main-dt .div-uno h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .main-dt .div-uno img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .main-dt h2 {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 1.5rem;
+  }
+
+  .contenedor .img-cuatro {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .main-contacto {
+    max-width: 600px;
+  }
+
+  .main-contacto input[type=submit],
+  .main-contacto input[type=reset] {
+    width: 48%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #footer h1 {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    justify-content: flex-end;
+  }
+
+  .navbar-nav .nav-item {
+    margin-left: 20px;
+  }
+
+  img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 0;
+    width: 100%;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-home {
+    background-color: darkred;
+    padding: 2rem 2rem;
+    grid-template-columns: 1.5fr repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+  }
+
+  .main-home .div-home .div-home2 {
+    padding: 3rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .main-home .div-home .div-home2 h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-jugador {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .main-jugador .div-player,
+  .main-jugador .div-jugador {
+    flex: 1 1 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-dt {
+    background-color: darkred;
+    padding: 2rem 2rem;
+    grid-template-columns: 1.5fr repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+  }
+
+  .main-dt .div-uno .div-generico {
+    padding: 3rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .main-dt .div-uno .div-generico h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: brown;
+  }
+
+  .contenedor {
+    display: grid;
+    /* Asegúrate de que el contenedor sea un grid */
+    grid-template-columns: repeat(2, 1fr);
+    /* Dos columnas de igual tamaño */
+    grid-template-rows: repeat(3, 1fr);
+    /* Tres filas automáticas, puede ajustarse según las imágenes */
+    padding: 10px;
+    gap: 5px;
+    /* Espacio entre las imágenes */
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .contenedor .img-tres {
+    grid-row: span 2;
+    /* Mantiene estas imágenes más grandes */
+    height: 100%;
+    /* Se asegura de que ocupen el 100% de su espacio */
+    display: block;
+    /* Asegúrate de que se muestren como bloque */
+  }
+
+  .contenedor .img-dos,
+  .contenedor .img-cuatro,
+  .contenedor .img-cinco,
+  .contenedor .img-seis {
+    grid-column: span 1;
+    /* Cada imagen ocupa una columna */
+    height: 100%;
+    /* Se asegura de que ocupen el 100% de su espacio */
+    display: block;
+    /* Asegúrate de que se muestren como bloque */
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-contacto {
+    max-width: 900px;
+  }
+
+  .main-contacto input[type=submit],
+  .main-contacto input[type=reset] {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1025px) {
+  #footer h1 {
+    font-size: 1.5em;
+  }
+}
+
+.text-center {
+  text-align: center;
+  /* Centra el texto dentro del contenedor */
+  margin: 20px 0;
+  /* Espacio vertical alrededor del contenedor */
+}
+
+.text-center a {
+  color: #ffffff;
+  /* Color del texto del enlace */
+  background-color: darkgray;
+  /* Color de fondo del enlace */
+  padding: 10px;
+  /* Espaciado interno */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  text-decoration: none;
+  /* Elimina el subrayado */
+  transition: background-color 0.3s ease;
+  /* Animación suave para el fondo */
+  margin-right: 1.5%;
+}
+
+.text-center a:hover {
+  background-color: #0056b3;
+  /* Color de fondo al pasar el mouse */
+}
+
+.main-home {
+  background-color: darkred;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  row-gap: 1rem;
+}
+
+.main-home .div-home {
+  background-color: black;
+  color: whitesmoke;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.main-home .div-home h1 {
+  font-family: "Georgia", serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  color: darkred;
+  padding: 15px;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.main-home .div-home h1 span {
+  display: block;
+}
+
+.main-home .div-home img {
+  border-radius: 20%;
+  width: 50%;
+  padding-top: 30px;
+}
+
+.main-home .div-home h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: whitesmoke;
+  margin: 20px 0;
+  position: relative;
+}
+
+.main-home .div-home h2::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 1px;
+  background-color: brown;
+  margin: 10px auto 0;
+}
+
+.main-home .div-home2 {
+  text-align: center;
+  background-color: rgb(31, 26, 26);
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-home .div-home2 h3 {
+  color: brown;
+  background-color: white;
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 15px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main-home p {
+  padding: 30px;
+}
+
+.main-jugador {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.main-jugador .div-player h1 {
+  font-family: "Georgia", serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  color: darkred;
+  padding: 15px;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.main-jugador .div-player,
+.main-jugador .div-jugador {
+  background-color: brown;
+  flex: 1 1 45%;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+.main-jugador .div-player img,
+.main-jugador .div-jugador img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.main-jugador .div-jugador h2 {
+  margin: 2rem;
+  background-color: whitesmoke;
+  border-radius: 30px;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  padding: 0, 5%;
+}
+
+.video-container {
+  background-color: brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-container .responsive-iframe {
+  position: relative;
+  width: 50%;
+  max-width: 500px;
+  height: 0;
+  padding-bottom: 28.125%;
+  margin-right: 1rem;
+}
+
+.video-container .responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-container .video-text {
+  width: 40%;
+  padding-left: 1rem;
+}
+
+.video-container .video-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: darkgrey;
+}
+
+.video-container .video-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: whitesmoke;
+}
+
+.main-dt {
+  background-color: darkred;
+  padding: 2rem;
+  display: grid;
+  display: flex;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 1rem;
+}
+
+.main-dt .div-uno {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: whitesmoke;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+}
+
+.main-dt .div-uno h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+  color: tomato;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.main-dt .div-uno h1 span {
+  display: block;
+}
+
+.main-dt .div-uno img {
+  border-radius: 20%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.main-dt .div-generico {
+  display: flex;
+  text-align: center;
+  background-color: brown;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-dt .div-generico img {
+  border-radius: 20%;
+}
+
+.main-dt .div-generico h2 {
+  margin: 2rem;
+  background-color: whitesmoke;
+  border-radius: 30px;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  padding: 0 5%;
+}
+
+.contenedor {
+  margin: 30px 30px;
+  background-color: black;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  /* Ajusta filas al contenido */
+  row-gap: 1.5rem;
+  align-content: center;
+  max-width: 100%;
+}
+
+.contenedor div {
+  margin: 5px;
+  /* Elimina márgenes en divs */
+}
+
+.contenedor div img {
+  width: 100%;
+  /* Ocupa el 100% del contenedor */
+  height: 100%;
+  /* Mantiene las proporciones */
+  object-fit: cover;
+  /* Asegura que las imágenes se ajusten correctamente */
+}
+
+.main-contacto {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.main-contacto h1 {
+  font-family: "Georgia", serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  color: darkred;
+  padding: 15px;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+input[type=submit],
+input[type=reset] {
+  width: 48%;
+  padding: 10px;
+  margin: 10px 1%;
+  font-size: 1em;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset] {
+  background-color: #dc3545;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+input[type=reset]:hover {
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=main.css.map */

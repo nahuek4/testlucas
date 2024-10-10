@@ -1,0 +1,88 @@
+// estilos jugador 
+
+.main-jugador {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+
+    .div-player h1 {
+        font-family: 'Georgia', serif; // Cambia la fuente a algo elegante
+        font-size: 1.5rem; // Tamaño de fuente grande
+        text-transform: uppercase; // Mayúsculas
+        letter-spacing: 3px; // Espacio entre letras
+        text-align: center; // Centra el texto
+        color: $color-principal; // Usa tu color principal (variable SCSS)
+        padding: 15px; // Espacio alrededor
+        background-color: $color-secundario; // Fondo con tu color secundario
+        border-radius: 10px; // Bordes redondeados
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .div-player,
+    .div-jugador {
+        background-color: brown;
+        flex: 1 1 45%;
+        margin: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        text-align: center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    }
+
+    .div-jugador h2 {
+        margin: 2rem;
+        background-color: whitesmoke;
+        border-radius: 30px;
+        color: black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 0, 5%;
+    }
+}
+
+.video-container {
+    background-color: brown;
+    display: flex; // Utilizamos flexbox para alinear el video y el texto de forma horizontal
+    align-items: center;
+    justify-content: center; // Alineamos el contenido verticalmente
+
+    .responsive-iframe {
+        position: relative;
+        width: 50%;
+        max-width: 500px; // El video ocupa el 60% del ancho del contenedor
+        height: 0;
+        padding-bottom: 28.125%; // Ajustamos la relación de aspecto 16:9 a un tamaño más pequeño
+        margin-right: 1rem; // Espacio entre el video y el texto
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .video-text {
+        width: 40%; // El texto ocupa el 40% del ancho del contenedor
+        padding-left: 1rem;
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: darkgrey;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: whitesmoke;
+        }
+    }
+}

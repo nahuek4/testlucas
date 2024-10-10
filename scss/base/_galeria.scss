@@ -1,0 +1,19 @@
+.contenedor {
+    margin: 30px 30px;
+    background-color: black;
+    display: grid;
+    grid-template-rows: auto auto auto; /* Ajusta filas al contenido */
+    row-gap: 1.5rem;
+    align-content: center;
+    max-width: 100%;
+
+    div {
+        margin: 5px; /* Elimina márgenes en divs */
+        img {
+            width: 100%; /* Ocupa el 100% del contenedor */
+            height: 100%; /* Mantiene las proporciones */
+            object-fit: cover; /* Asegura que las imágenes se ajusten correctamente */
+        }
+    }
+
+}
